@@ -1,9 +1,11 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+ruby '2.2.4'
 
 gem 'bootstrap-sass', '~> 3.3.5.1'
 gem 'sprockets', '2.11.0'
 # gem 'sass-rails', '>= 3.2'
+
+gem 'simple_form'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.4'

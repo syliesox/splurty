@@ -9,20 +9,22 @@
 <body>
   <header>
     <div class="col-xs-3">
-      <div class="circle">
-        <br />
-        You know
-        <br />
-        you need
-        <br />
-        to teach!
-      </div>
+      <%= link_to root_path, class: 'logo'  do %>
+        <div class="circle">
+          <br />
+          You know
+          <br />
+          you need
+          <br />
+          to teach!
+        </div>
+      <% end %>
     </div>
     <div class="col-xs-4 slogan">
       Spluting out unsolicited advice about teaching since 2016
     </div>
     <div class="col-xs-5 links">
-      <%= link_to 'Contribute', '#' %>
+      <%= link_to 'Contribute', new_quote_path %>
       <%= link_to 'About', '#' %>
     </div>
   </header>
@@ -36,7 +38,7 @@
   <div class="footer">
     <div class="container">
       <div class="col-xs-6">
-        <%= link_to "This isn't enough, I need more", "#", class: 'next-quote' %>
+        <%= link_to "This isn't enough, I need more", root_path, class: 'next-quote' %>
       </div>
       <div class="col-xs-6 footer-blurb">
         Proudly hacked in Atlanta, Ga by <a href="http://thefirehoseproject.com">Julia</a><br />
