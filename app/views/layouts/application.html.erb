@@ -24,10 +24,38 @@
       Spluting out unsolicited advice about teaching since 2016
     </div>
     <div class="col-xs-5 links">
-      <%= link_to 'Contribute', new_quote_path %>
+      <!-- Button trigger modal -->
+        <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#myModal'} %>
+      </button>
       <%= link_to 'About', about_path %>
     </div>
   </header>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h2 class="modal-title" id="myModalLabel">It's your turn...</h2>
+          <h3>Tell us what your favorite quote is:</h3>
+        </div>
+        
+          <%= simple_form_for @quote do |f| %>
+            <div class="modal-body">
+              <%= f.input :saying %>
+              <%= f.input :author %>
+            </div>
+          
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <%= f.submit 'Create', class: 'btn btn-danger' %>
+            </div>
+          <% end %>
+      </div>
+    </div>
+  </div>
+
   <hr />
   <br class="clear" />
 
