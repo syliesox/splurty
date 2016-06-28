@@ -1,4 +1,11 @@
 class QuotesController < ApplicationController
+
+require 'rubygems'
+require 'ImageResize'
+
+#input_image_filename, output_image_filename, max_width, max_height
+Image.resize('being_quote.png', 'end_quote.png', 5, 5)
+
   def index
     @quote = Quote.order("RANDOM()").first
   end

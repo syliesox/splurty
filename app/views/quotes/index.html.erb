@@ -1,12 +1,23 @@
-<h4>
-  <span>SPLURTY No. <%= @quote.id %></span>
-  Here's the <u>best unsolicited teaching advice</u> you can get...
-</h4>
+<div>
+    <br>
+   
+    <br>
+      <div class="box">
+          <h4>
+            <span>SPLURTY No. <%= @quote.id %>:</span>
+            &nbsp;&nbsp;
+            Here's the <u>best motivation</u> you can get...
+          </h4>
 
-<h1><%= @quote.saying %></h1>
-<h2 class="pull-right">- <%= @quote.author %></h2>
+          <h1><%=image_tag("begin_quote copy.png", alt: "Begin Quote")%><%= @quote.saying %><%=image_tag("end_quote copy.png", alt: "End Quote")%></h1>
+          <h2 class="pull-right">- <%= @quote.author %></h2>
+      </div>
 
-<br class="clear" />
-<br />
-<br />
-<br />
+    <br class="clear" />
+
+    <br />
+    
+    <br />
+
+</div>
+
