@@ -43,12 +43,13 @@
   font-weight:bold;
 }
 
-.links btn {
+.btn btn-large {
   color:white;
   font-size: 25px;
   border-bottom: 1px solid #dfdfdf;
   font-family: 'Raleway', sans-serif;
   font-weight:bold;
+  margin-left: 10px;
 }
 
 hr {
@@ -116,6 +117,7 @@ h4 span {
   background-image: image-url('grey_checker.jpg');
 }
 
-.header {
-  background-color: #333333;
+@viewport{
+  width: device-width;
+  height: device-height;
 }

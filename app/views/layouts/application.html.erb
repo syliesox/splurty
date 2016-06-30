@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
   <title>Splurty</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
@@ -26,7 +27,7 @@
   <div class="col-xs-8 col-xs-offset-1 col-sm-offset-0 col-sm-5 btn-group links" role="group">
     <!-- Button trigger modal -->
       <button type="button" class="btn btn-large" data-toggle="modal" data-target="#myModal">Contribute</button>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
       <%= button_to 'About', about_path, method: :get, type: "button", class: "btn btn-large" %>
   </div>
 </header>
